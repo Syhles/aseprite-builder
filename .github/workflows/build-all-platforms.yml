@@ -55,7 +55,7 @@ jobs:
       - name: Download & Extract Skia
         shell: powershell
         run: |
-          Invoke-WebRequest -Uri "https://github.com/aseprite/skia/releases/tag/m151-a90155cff0/Skia-Windows-Release-x64.zip" -OutFile "skia.zip" -UseBasicParsing
+          Invoke-WebRequest -Uri "https://github.com/aseprite/skia/releases/tag/m151-a90155cff0/Skia-Windows-Release-x64" -OutFile "skia.zip" -UseBasicParsing
           Expand-Archive -Force "skia.zip" "skia"
 
       - name: Initialize MSVC Environment
@@ -119,7 +119,7 @@ jobs:
 
       - name: Download & Extract Skia
         run: |
-          wget https://github.com/aseprite/skia/releases/tag/m151-a90155cff0/Skia-Linux-Release-x64.zip
+          wget https://github.com/aseprite/skia/releases/tag/m151-a90155cff0/Skia-Linux-Release-x64
           unzip Skia-Linux-Release-x64.zip -d skia
 
       - name: Configure Build
@@ -216,7 +216,7 @@ jobs:
 
       - name: Download & Extract Skia
         run: |
-          wget wget https://github.com/aseprite/skia/releases/tag/m151-a90155cff0/Skia-macOS-Release-arm64.zip
+          wget wget https://github.com/aseprite/skia/releases/tag/m151-a90155cff0/Skia-macOS-Release-arm64
           unzip Skia-macOS-Release-arm64.zip -d skia
 
       - name: Configure Build
@@ -270,7 +270,7 @@ jobs:
 
       - name: Download & Extract Skia
         run: |
-          wget https://github.com/aseprite/skia/releases/tag/m151-a90155cff0/Skia-macOS-Release-x64.zip
+          wget https://github.com/aseprite/skia/releases/tag/m151-a90155cff0/Skia-macOS-Release-x64
           unzip Skia-macOS-Release-x64.zip -d skia
 
       - name: Configure Build
