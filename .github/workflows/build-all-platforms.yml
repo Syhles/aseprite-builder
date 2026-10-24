@@ -222,8 +222,7 @@ jobs:
 
       - name: Download & Extract Skia
         run: |
-          wget wget https://github.com/aseprite/skia/releases/t
-          download/m151-a90155cff0/Skia-macOS-Release-arm64
+          wget wget https://github.com/aseprite/skia/releases/download/m151-a90155cff0/Skia-macOS-Release-arm64
           unzip Skia-macOS-Release-arm64.zip -d skia
           wget https://github.com/aseprite/skia/releases/download/m151-a90155cff0/icudtl.dat -O skia/out/Release-arm64/icudtl.dat
           
